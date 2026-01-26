@@ -1,4 +1,4 @@
-Package Arrays;
+package arrays;
 
 public class ContainsMostWater {
    public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 
 public class ValidPalindrome {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package BinearySearch;
+package binearySearch;
 
 public class FindXInSortedArray {
     public int search(int[] nums, int target) {
