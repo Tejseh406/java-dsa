@@ -13,7 +13,6 @@ public class ReverseVowels {
         int left = 0, right = s.length() - 1;
         char[] strChars = s.toCharArray();
 
-        
         while(left < right){
             while(left < right && !isVowel(strChars[left])){
                 left++;
@@ -21,12 +20,29 @@ public class ReverseVowels {
             while(left < right && !isVowel(strChars[right])){
                 right--;
             }
+            if(left < right){
                 char temp = strChars[left];
                 strChars[left] = strChars[right];
                 strChars[right] = temp;
                 left++;
                 right--;
+            }
         }
+        
+        // while(left < right){
+        //     if(!isVowel(strChars[left])){
+        //         left++;
+        //     } else if(!isVowel(strChars[right])){
+        //         right--;
+        //     } else {
+        //         char temp = strChars[left];
+        //         strChars[left] = strChars[right];
+        //         strChars[right] = temp;
+        //         left++;
+        //         right--;
+        //     }
+        // }
+           
 
         return new String(strChars);
     }
