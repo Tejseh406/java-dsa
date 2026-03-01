@@ -1,4 +1,4 @@
-package carryForward;
+package carryforward;
 
 public class AGSubSequence {
 
